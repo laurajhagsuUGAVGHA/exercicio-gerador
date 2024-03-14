@@ -5,11 +5,11 @@ export function ModalTokens({handleClose}) {
         <View style={ESTILO.container}>
         <View style={ESTILO.content}>
             <Text style={ESTILO.title}>
-                Senha Gerada
+                Avaliação Gerada
             </Text>
             <Pressable style={ESTILO.innerToken} >
                 <Text style={ESTILO.text}>
-                    senha
+                    Confime sua avaliação
                 </Text>
             </Pressable>
             <View style={ESTILO.buttonArea}>
@@ -20,7 +20,7 @@ export function ModalTokens({handleClose}) {
                 </TouchableOpacity>
                 <TouchableOpacity style={[ESTILO.button, ESTILO.buttonSave]} >
                     <Text style={ESTILO.buttonSaveText}>
-                        Salvar Senha
+                        Salvar 
                     </Text>
                 </TouchableOpacity>
             </View>
@@ -53,7 +53,7 @@ const ESTILO = StyleSheet.create({
         marginBottom: 25,
     },
     innerToken: {
-        backgroundColor: "#0e0e0e",
+        backgroundColor: "#620A40",
         width: "85%",
         padding: 14,
         borderRadius: 8
@@ -81,11 +81,11 @@ const ESTILO = StyleSheet.create({
     },
     buttonSave: {
     
-        backgroundColor: "#851d21"
+        backgroundColor: "#EEEEEE"
     },
     buttonSaveText: {
-        color: "#FFF",
-        fontWeight: "bold"
+        color: "#000",
+        
     }
 
 })

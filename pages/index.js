@@ -15,17 +15,17 @@ export function Home() {
         <View style={ESTILO.container}>
             <Image source={require("../assets/logo.png")} style={ESTILO.logo} />
             <Text style={ESTILO.caracteres}>
-                {qtde} Caracteres
+                {qtde} 
             </Text>
 
             <View style={ESTILO.area}>
                 <Slider style={{ height: 50 }}
-                    minimumValue={6}
-                    maximumValue={20}
+                    minimumValue={5}
+                    maximumValue={10}
 
-                    minimumTrackTintColor="#ff0000"
-                    maximumTrackTintColor="#000"
-                    thumbTintColor="#392de9"
+                    minimumTrackTintColor="#000"
+                    maximumTrackTintColor="#620A40"
+                    thumbTintColor="#"
                     value={qtde}
                     onValueChange={(value) => defineQtde(value.toFixed(0))}
                 />
@@ -33,7 +33,7 @@ export function Home() {
             </View>
             <TouchableOpacity style={ESTILO.button} onPress={gerarToken}>
                 <Text style={ESTILO.buttonText}>
-                    Gerar Senha
+                    Avalie nosso escritorio
                 </Text>
             </TouchableOpacity>
             <Modal visible={telaModal} animationType="fade" transparent={true}>
@@ -53,7 +53,7 @@ const ESTILO = StyleSheet.create({
     logo: {
         marginBottom: 60,
         width: 250,
-        height: 240,
+        height: 230,
     },
     area: {
         marginBottom: 14,
@@ -64,7 +64,7 @@ const ESTILO = StyleSheet.create({
         padding: 8
     },
     button: {
-        backgroundColor: "#392de9",
+        backgroundColor: "#620A40",
         width: "80%",
         height: 50,
         justifyContent: 'center',
