@@ -53,7 +53,7 @@ const ESTILO = StyleSheet.create({
     logo: {
         marginBottom: 60,
         width: 250,
-        height: 230,
+        height: 250,
     },
     area: {
         marginBottom: 14,

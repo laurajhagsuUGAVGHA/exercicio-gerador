@@ -6,7 +6,7 @@ export function PaginaSenhas() {
         <SafeAreaView style={{ flex: 1 }}>
             <View style={ESTILO.header}>
                 <Text style={ESTILO.title}>
-                    Minhas senhas
+                    Minhas avaliação
                 </Text>
             </View>
         </SafeAreaView>
@@ -17,12 +17,12 @@ const ESTILO = StyleSheet.create({
     header: {
         padding: 14,
         paddingTop: 58,
-        backgroundColor: "#392de9"
+        backgroundColor: "#4D1610"
     },
     title: {
         fontSize: 18,
         fontWeight: "bold",
-        color: "#FFF"
+        color: "#fff"
     }
 
 })
